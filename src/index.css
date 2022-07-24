@@ -38,13 +38,20 @@ h1{
   font-family: 'Poppins';
 }
 
-#katie{
+.cards{
+  display: flex;
+  margin: 0rem;
+}
+#images, #card-content{
+  margin-left: 5rem;
+}
+
+#images{
   height: 15rem;
-  margin: 0.5rem 5rem;
+  border-radius: 9px;
 }
 
 #card-content{
-  margin-left: 5rem;
   font-size: small;
 }
 
