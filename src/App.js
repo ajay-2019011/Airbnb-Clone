@@ -3,41 +3,23 @@ import React from "react"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Card from "./components/Card"
+import cardsData from "./cardsData"
 
 export default function App() {
+  const cardsElements = cardsData.map((ele) => {
+    return <Card
+            img={ele.img}
+            line1={ele.line1}
+            line2={ele.line1}
+            line3={ele.line3}
+           />
+  })
   return (
     <div>
       <Navbar />
       <Hero />
       <div className="cards">
-        <Card
-          //require() to send the image locally
-          img={require("./images/katie-zaferes.png")}
-          line1={[" 5.0", " (6) USA"]}
-          line2="Life Lessons with Katie Zaferes"
-          line3={["From $136 ", "/ person"]}
-        />
-        <Card
-          //require() to send the image locally
-          img={require("./images/wedding.png")}
-          line1={[" 5.0", " (30) USA"]}
-          line2="Learning wedding photography"
-          line3={["From $125 ", "/ person"]}
-        />
-        <Card
-          //require() to send the image locally
-          img={require("./images/mountains.jpeg")}
-          line1={[" 4.8", " (2) USA"]}
-          line2="Group Mountain Biking"
-          line3={["From $50 ", "/ person"]}
-        />
-        <Card
-          //require() to send the image locally
-          img={require("./images/boxings.jpg")}
-          line1={[" 4.9", " (29) USA"]}
-          line2="Mike Tyson Academy"
-          line3={["From $50 ", "/ person"]}
-        />
+        {cardsElements}
       </div>
     </div>
   );
