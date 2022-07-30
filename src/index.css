@@ -69,3 +69,14 @@ h1{
 #two{
   font-weight: bold;
 }
+
+.footer > h3{
+  margin-bottom: 0;
+}
+.footer{
+  margin-top: 1rem;
+  padding: 0.1rem 0;
+  text-align: center;
+  background-color:firebrick;
+  color:oldlace;
+}
