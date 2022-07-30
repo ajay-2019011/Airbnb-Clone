@@ -41,9 +41,11 @@ h1{
 .cards{
   display: flex;
   margin: 0rem;
+  overflow-x:auto;
+  /* text-overflow: ellipsis; */
 }
 #images, #card-content{
-  margin-left: 5rem;
+  margin-left: 6rem;
 }
 
 #images{
