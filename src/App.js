@@ -14,6 +14,8 @@ export default function App() {
             line1={ele.line1}
             line2={ele.line2}
             line3={ele.line3}
+            openSpots={ele.openSpots}
+            status={ele.status}
            />
   })
   return (
