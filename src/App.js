@@ -10,12 +10,7 @@ export default function App() {
   const cardsElements = cardsData.map((ele) => {
     return <Card
             key={ele.id}
-            img={ele.img}
-            line1={ele.line1}
-            line2={ele.line2}
-            line3={ele.line3}
-            openSpots={ele.openSpots}
-            status={ele.status}
+            element={ele}
            />
   })
   return (
